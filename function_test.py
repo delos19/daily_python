@@ -1,9 +1,6 @@
 def quick(gallons, cost):
-    gallons = int(gallons)
-    cost = int(cost)
     total = int(gallons) * int(cost)
-    print(total)
-    print("The total cost of gas is: $" + total)
+    print("The total cost of gas is: $" + str(total))
 
 
 def test_Function(first, last):
