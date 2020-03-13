@@ -42,9 +42,13 @@ word_list = open('list.txt')
 
 for row in word_list:
     for letter in row:
-        morse_eq = dictionary.get(letter)
+        morse_eq = dictionary.get(letter) 
         dash += str(morse_eq).count('-')
         dot += str(morse_eq).count('.')
+        count = str(morse_eq).count('-')
+        if count > 15:
+            print(row)
+        
 
 print('There are {} dashes'.format(dash))
 print('There are {} dots'.format(dot))
