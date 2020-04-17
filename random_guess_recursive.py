@@ -18,5 +18,3 @@ def check(select):
         check(select)
         
 main()
-        
-        
