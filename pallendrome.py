@@ -2,8 +2,9 @@ a = 999
 b = 999
 pal = []
 
+# Find the largest palindrome made from the product of two 3-digit numbers.
+
 # This function iterates the product of a and b
-# It also appends all pallendromes to the list pal
 def iterateProduct(a, b):
     for i in range(a, 100, -1):
         for j in range(b, 100, -1):
