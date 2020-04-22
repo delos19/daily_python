@@ -1,28 +1,27 @@
-
 a = 999
 b = 999
+pal = []
 
 def iterateProduct(a, b):
-    for i in range(999, 100):
-        for j in range(999, 100):
+    for i in range(a, 100, -1):
+        for j in range(b, 100, -1):
             product = i * j
-            j += -1
             if isPalendrome(product) is True:
-                print('The largest pallendrome is: ', product)
+                break
             else:
                 isPalendrome(product)
-                print('Did not work, continuing...')
-        i += -1
-    
+                
+
 
 def isPalendrome(product):
     product = str(product)
     rev_prod = reversed(product)
     if list(product) == list(rev_prod):
-        print('Should be good')
+        pal.append(int(product))
+        return True
     else:
-        print('Did not work, continuing...')
+        return False
 
-print(a,b)
 iterateProduct(a, b)
-print(a,b)
+print(pal)
+print('The largest pallendrome is: ', max(pal))
