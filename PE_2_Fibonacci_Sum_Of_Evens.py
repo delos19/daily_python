@@ -3,7 +3,7 @@
 # of the even-valued terms.
 # Project Euler Problem 2
 
-evens = []
+evens = [] # creates even class
 
 def fib(i, prev):
     total = 0
