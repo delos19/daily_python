@@ -1,4 +1,4 @@
-num = 600851475143
+num = 46337
 newNum = num
 largestFactor = 0
 counter = 2
