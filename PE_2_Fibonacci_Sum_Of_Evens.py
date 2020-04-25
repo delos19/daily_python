@@ -3,7 +3,7 @@
 # of the even-valued terms.
 # Project Euler Problem 2
 
-evens = [] # creates even class
+evens = [] # creates even list
 
 def fib(i, prev):
     total = 0
@@ -13,11 +13,11 @@ def fib(i, prev):
         i += prev
         prev = temp
 
-def evensCheck(i):
+def evensCheck(i): # verifys the number is even
     if i % 2 == 0:
         evens.append(i)
         
-def sumPrint():
+def sumPrint(): # Prints out the sum of all of the even values
     total = sum(evens)
     print(evens)
     print('The sum of the evens is: \n', total)
